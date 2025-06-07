@@ -16,6 +16,7 @@ body {
 
 /* NAVIGATION BAR */
 .nav-container {
+    /* background-color: red; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -39,32 +40,58 @@ body {
     color: rgb(109, 67, 0);
     text-shadow: 0 0 10px rgb(109, 67, 0);
 }
-
-.menu {
-   display: none;
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  font-size: 2rem;
-  color: #6d4300;
-  z-index: 999;
-  cursor: pointer;
-}
-
-.cancel {
-    cursor: pointer;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    color: #000;
-    font-size: 2rem;
-    display: none;
-}
-
 .links1 {
     display: flex;
     gap: 3rem;
     align-items: center;
+}
+.links1 ul{
+    display: flex;
+    list-style: none;
+}
+.links1 li{
+   margin-left: 15px;
+   z-index: 1;
+}
+.phone i{
+    color:rgb(190, 117, 0);
+    font-size: 30px;
+    margin: 3px 5px;
+    z-index: 2;
+}
+.phone {
+     position: fixed; /* və ya absolute */
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+    top: 45px;
+    right: 35px;
+    width: 350px;
+    height:150px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    background-color: white;
+    z-index: 2; /* Üstdə qalması üçün */
+}
+.phone p{
+    padding: 5px;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+.phone_css{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.links1  li button{
+    padding:5px;
+    border-radius: 10px;
+    background-color: rgb(109, 67, 0);
 }
 
 .links1 a {
@@ -111,11 +138,13 @@ body {
 
 /* MAIN SECTION */
 section {
+    display: flex;
     width: 100%;
     height: 90vh;
 }
 
 .main_part {
+    /* background-color: red; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -274,6 +303,7 @@ section {
         top: 16px;
         left: 15px;
         font-size: 1.6rem;
+        
     }
 
     .menu {

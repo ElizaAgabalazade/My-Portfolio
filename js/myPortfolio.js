@@ -1,11 +1,6 @@
-const menuBtn = document.querySelector(".menu");
-const cancelBtn = document.querySelector(".cancel");
-const dropdown = document.querySelector(".dropdown");
+const button = document.getElementById("contactMe");
+const dp_box = document.getElementById("dp_box");
 
-menuBtn.addEventListener("click", () => {
-  dropdown.classList.add("active");
-});
-
-cancelBtn.addEventListener("click", () => {
-  dropdown.classList.remove("active");
+button.addEventListener("click", () => {
+    dp_box.classList.toggle("phone_css");
 });
