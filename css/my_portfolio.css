@@ -23,9 +23,7 @@ body {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    /* İKONUN POSITION-U ÜÇÜN */
     i{
-        /* position: absolute; */
         font-size: 64px;
     }
 }
