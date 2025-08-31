@@ -54,3 +54,14 @@ h1{
   margin-right: auto;
 
 }
+ button {
+       margin: 150px;
+       padding: 10px;
+       font-size: 20px;
+
+       a {
+        color: #000;
+        text-shadow: 0 0 10px rgb(109, 67, 0);
+           text-decoration: none;
+       }
+   }
